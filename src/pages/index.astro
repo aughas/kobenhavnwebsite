@@ -2,11 +2,217 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
+import Anmeldelse from "../components/Anmeldelse.astro";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
+		<section class="grid lg:grid-cols-3 mx-6 lg:mt-28">
+			<div class=" col-span-2 animate__animated animate__backInLeft">
+				<img src="kobenhavnerbilleder-sten-simons.jpg" alt="" class="w-full h-96 object-cover"></div>
+			<div class="ml-8">
+				<h2 class="text-4xl font-semibold">Københavnerbilleder - en guide til hipster foto
+					af Sten Simons
+					</h2>
+				<p>Billede af bogen: Kan være “kobenhavnerbilleder-sten-simons.jpg” eller billeder fra bogen - der er frit valg, så længe det skaber stemning. 
+				</p>
+			<div class="bounce-in-top mt-10"><Button variant="secondary" size="large" >Køb Bogen</Button></div>
+			</div>
+			
+		</section>
+<article class="max-w-screen-xl mx-auto px-4">
+	
+			<section class="grid grid-cols-2 mt-32 max-w-3xl mx-auto gap-6">
+				<div class="lg:text-right">
+					<h2 class="text-4xl font-semibold">Hurtige facts</h2>
+					<p>Titel: Københavnerbilleder - en guide til hipster foto</p>
+						<p>Forfatter: Sten Simons</p>
+						<p>Antal sider: 344</p>
+						<p>Forlag: Mellem Linjerne</p>
+						<p>ISBN: 987-6-987654-32-1</p>
+						<p>Pris: 399.-</p>
+						
+				</div>
+				
+				<div>
+					<h2 class="text-4xl font-semibold">Kort om bogen</h2>
+					<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	 
+					</p>
+				</div>
+			</section>
+	
+			<section class="grid lg:grid-cols-3 gap-4 mt-28 load">
+				<img src="kobenhavnerbilleder_aaben_venstre.jpg" alt="" class="w-full h-60 object-cover">
+				<img src="kobenhavnerbilleder_oppefra.jpg" alt="" class="w-full h-60 object-cover">
+				<img src="kobenhavnerbilleder-sten-simons.jpg" alt="" class="w-full h-60 object-cover">
+			</section>
+	
+			<section class="mt-32 load2" id="kapitlerne">
+				<h2  class="text-4xl font-semibold">Kapitlerne</h2>
+				<div class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-8">
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 1 - Intro til street foto</h3>
+						<p>Hvad er street foto? Det handler i bund og grund om at skyde byens liv og byens geometri (urban geometry). I dette kapitel får du en grundig intro til hvad street foto er og et overblik over nogen af de kendte street-fotografer. Alt krydret med en masse gode eksempler på street fotos.
+						</p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 2 - Om at skyde street</h3>
+						<p>Vil du skyde street? Så er der ikke nogen vej udenom: Du skal ud på gaderne og prøve det! I dette kapitel får du en teknisk indføring i hvordan du bedst skyder street. Uanset om du er begynder eller professionel, er der mange gode tekniske tips og tricks til street-skyderiet.
+						</p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 3 - Om at finde det rette motiv</h3>
+						<p>Indimellem er man heldig, andre gange kommer man hjem helt uden gode motiver. Med et par tips og tricks til at finde de rette motiver, stiger chancen gevaldigt for at fange de gode motiver.
+						</p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 4 - Digital street foto
+						</h3>
+						<p>De fleste af os skyder oftest digitalt fordi det er billigere og nemmere. Og nogen teknikker og fremgangsmåder egner sig kun til digital street foto. I dette kapitel får du en række tips og tricks til digital street-foto. </p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 5 - Analog street foto
+						</h3>
+						<p>Analog er sejt fordi det er mere “ægte,” dyrere og mere besværligt end digital. Det signalerer entusiasme. Nogle teknikker og fremgangsmåder egner sig bedst til analog street foto. I dette kapitel får du en række tips og tricks til analog street-foto. 
+						</p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 6 - Om at skyde sort/hvid</h3>
+						<p>Alle street-fotografer skyder sort/hvid nu og da. Nogen altid. Hvorfor? Hvad er der specielt ved sort/hvid fotografering, og hvad adskiller sort/hvid fra farvefotografering? Her får du en række tips og tricks til sort/hvid fotografering. 
+						</p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 7 - Kreative teknikker</h3>
+						<p>Dobbelteksponeringer, ICM (intentional camera moves), smadrede objektiver, gamle filmruller og alle mulige andre, spændende kreative teknikker kan løfte dine fotografier fra at være kedelige dokumentationer af hverdagen til at blive vilde kunststykker. Så dyk ned i dette kapitel om eksperimenterende teknikker!
+						</p>
+					</article>
+					<article>
+						<h3 class="text-xl font-medium">Kapitel 8 - Kom helt tæt på!</h3>
+						<p>Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…
+						</p>
+					</article>
+					
+				</div>
+			</section>
+	
+			<section class="mt-32" id="anmeldelser">
+				<h2 class="text-4xl font-semibold">Pressen siger</h2>
+				<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
+					<Anmeldelse title="masser af tips" stjerner="5" forfatter="Hanne Hovgaard, Berlingeren" anmeldelseid="a1">
+						Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
+					</Anmeldelse>
+					<Anmeldelse title="Hvad mere skal man sige?" stjerner="4" forfatter="Kim Kloggaard, Fotojournalen.dk" anmeldelseid="a2">
+						Københavnerbilleder er en grundig introduktion til at skyde billeder med retro-kant. Hvad enten du er har arbejdet med foto siden 135-filmen kom på markedet, du kun har skudt digitalt eller er helt nybegynder, er der masser af tips og tricks i bogen.
+					</Anmeldelse>
+					<Anmeldelse title="Han bliver bedre og bedre" stjerner="6" forfatter="Volmer Hansen, Lukkertiden.dk" anmeldelseid="a3">
+						Sten Simons kan det der - og han bliver bedre og bedre. Stens tredje fotobog er klart den bedste - her er han for alvor i sit rette element, meget bedre end “studiefotografering som begyndere.” Tillykke - godt arbejde.
+					</Anmeldelse>
+				</div>
+			</section>
+	
+			<section class="mt-32 load3" id="gallery">
+				<h3 class="text-xl font-medium">Galler Billeder fra bogen
+				</h3>
+				<article class="grid grid-cols-2 lg:grid-cols-4 gap-6 overflow-hidden">
+					<img src="bild1.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125" >
+					<img src="bild2.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild3.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild4.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild5.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild6.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild7.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild8.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild9.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild10.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild11.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+					<img src="bild12.webp" alt="" class="lg:w-80 lg:h-60 lg:object-cover transition-all hover:scale-125">
+				</article>
+			</section>
+		
+			<section class="grid lg:grid-cols-2 max-w-3xl mx-auto gap-8 mt-32">
+			<article>
+				<h3 class="lg:text-right font-medium">Forfatteren</h3>
+				<img src="sten_simons.jpg" alt="" class="w-96 h-80 object-cover">
+			</article>
+			<h3 class="lg:mt-6 font-medium">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”
+				Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
+				</h3>
+			</section>
+	
+			<section class="max-w-lg mx-auto mt-32 mb-10" id="bog">
+				<h3 class="text-xl font-medium">Køb Københavnerbilleder nu!
+				</h3>
+	
+				<form class="space-y-4 grid grid-cols-1 gap-6">
+	
+					<div class="">
+						<label for="kursusgang">Antal:</label>					
+						<input type="number" class="ml-20" />
+					</div>
+		
+					<div class="">
+						<input type="radio" id="forud" name="levering" checked="checked">
+						<label for="forud">PostDK</label>
+						<input type="radio" id="kredit" name="levering">
+						<label for="kredit">Afhent</label>
+						
+					</div>
+				
+					<div class="grid gap-3">
+						<label for="navn">Navn:</label>
+						<input type="text" id="navn" name="navn" placeholder="Anders And">
+					</div>
+		
+					<div class="grid gap-3">
+						<label for="adresse">Adresse:</label>
+						<input type="text" id="adresse" name="adresse" placeholder="Paradisæblevej 8">
+					</div>
+		
+					<div class="grid gap-3 grid-cols-6">
+						<label for="postnummer" class="col-span-6">Postnummer & by:</label>
+						<input type="text" id="postnummer" name="postnummer" class="col-span-2" placeholder="0900">
+						<input type="text" id="bynavn" name="bynavn" disabled class="col-span-4" placeholder="Andeby C">
+					</div>
+		
+					<div class="grid gap-3">
+						<label for="telefon">Telefon:</label>
+						<input type="tel" id="telefon" name="telefon" placeholder="555-555">
+					</div>
+		
+					<div class="">
+						<input type="checkbox" id="nyhedsbrev" name="nyhedsbrev">
+						<label for="nyhedsbrev">Ja tak til nyhedsbreve og tilbud</label>
+					</div>
+		
+					<div class="flex justify-end hover:rotate-scale-up">
+						<Button variant="secondary" size="small">Til betaling</Button>
+					</div>
+				</form>
+			</section>
+</article>
+		<!-- <h1>Index overskrift</h1>
 		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-	</article>
+		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p> -->
 </MainLayout>
+
+<script>
+	import { inView } from "motion";
+	const inviewelement = document.querySelector(".load");
+	inView(
+		inviewelement, () => {
+			inviewelement.classList.add("slide-top")
+		}
+	)
+
+	const inviewelement2 = document.querySelector(".load2");
+	inView(
+		inviewelement2, () => {
+			inviewelement2.classList.add("slide-top")
+		}
+	)
+
+	const inviewelement3 = document.querySelector("load3");
+	inView(
+		inviewelement3, () => {
+			inviewelement3.classList.add("slide-in-blurred-top")
+		}
+	)
+</script>

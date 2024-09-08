@@ -1,5 +1,28 @@
 ---
+import Link from '../components/Link.astro'
 ---
-<div>
-Header - tilføj navigation mm.
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full z-10 bg-white" >
+<div id="navbar" class="flex flex-row justify-between">
+<div id="logo" class="">
+<a href="#navbar" class=""><p class="text-4xl font-semibold">Sten Simons</p></a>
+</div>
+<nav id="desktopmenu" class="hidden lg:block">
+<ul class="flex flex-row gap-4">
+<li class=""><a href="#kapitlerne" >Kapitlerne</a></li>
+<li class=""><a href="#anmeldelser" >Anmeldelser</a></li>
+<li class=""><a href="#gallery" >Gallery</a></li>
+<li class=""><a href="#bog" >Køb bogen</a></li>
+</ul>
+</nav>
+<button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
+</div>
+<nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+<ul >
+    <li class=""><a href="#kapitlerne" >Kapitlerne</a></li>
+    <li class=""><a href="#underviseren" >Anmeldelser</a></li>
+    <li class=""><a href="#inspiration" >Gallery</a></li>
+    <li class=""><a href="#bog" >Køb bogen</a></li>
+</ul>
+</nav>
 </div>
